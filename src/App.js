@@ -13,11 +13,13 @@ function App() {
         <h1 className="heading">Hotel Rooms</h1>
         {HotelData.map(data=>{
           return(
-            <Hotel
+            <div className="hotel">
+            <Hotel className="hotel"
             img={data.img}
             name={data.name}
             desc ={data.desc}
             />
+            </div>
           )
           
         })}
